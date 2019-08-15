@@ -1,0 +1,44 @@
+Vue的介绍 vue2.X
+
+vue简介
+vuex是一个专门为vue.js应用程序开的状态管理模式
+它采用集中式存储管理应用的所有组件的状态
+
+vue安装工程化工具：
+npm install -g @vue/cli
+# OR
+yarn global add @vue/cli
+
+vue创建一个项目：
+vue create my-project
+# OR
+vue ui
+
+vue的组成介绍
+state  数据仓库
+getter 用来获取数据的
+mutation  用来修改数据的
+action    用来提交mutation
+
+开发环境
+IDE 开发工具vs code、WS
+
+
+v-html原始html
+绑定属性方式 v-bind:href
+
+计算数据：computed
+侦听器：watch
+使用场景介绍,watch(异步场景)，computed（数据联动）
+
+条件渲染
+常用指令 v-if  
+v-else,v-else-if  
+v-show 等于display:none
+
+列表渲染
+v-for 
+v-for与v-if结合使用
+v-for高阶用法
+
+class与style的绑定

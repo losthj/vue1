@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+    <style> 
+        .bg{color: red;}
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="bg" v-bind:id="bg1">
+            hello world!
+            {{msg}} 
+        </div>
+        <div class="bg">
+            {{msg}}
+        </div>
+        {{(count+1)*10}}
+        <div v-html="template"></div>
+        <a href="http://www.baidu.com">百度</a>
+
+        <!-- 绑定属性方式 -->
+        <a v-bind:href="url">百度</a>
+        <a :href="url1">囧羊理财</a>
+        <div>
+
+            <button type="button" v-on:click="submit()">加数值</button>
+        </div>
+    </div>
+   
+
+    <script>
+        //this代表vue对象
+    new Vue ({
+        el:'#app',
+        data:{
+            bg1:'app-bind',
+            msg:'hello vue!!',
+            count:0,
+            template:'<div>你好 template！</div>',
+            url:'http://www.baidu.com',
+            url1:'http://www.jylc168.com'
+        },
+        methods: {
+            submit:function(){
+                this.count ++
+            }
+        },
+    })
+    </script>
+</body>
+</html>
