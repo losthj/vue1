@@ -14,6 +14,13 @@ vue create my-project
 # OR
 vue ui
 
+运行
+npm run serve
+#OR
+yarn serve
+#OR
+npx vue-cli-service serve
+
 vue的组成介绍
 state  数据仓库
 getter 用来获取数据的
@@ -69,3 +76,17 @@ vuex介绍
 为vue.js开发状态管理模式
 组件状态集中管理
 组件状态改变遵循统一的规则
+
+如何集成Vue
+集成场景
+    单页面，多页面引入Vue.js
+    复杂单页面应用Vue cli工具
+
+开发工作流
+    需求调研（确定需求）
+    交互设计、逻辑设计、接口设计
+    代码实现、测试运行、线上部署
+
+
+
+
